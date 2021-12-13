@@ -1,4 +1,4 @@
-const fs = require('fs');
+const {writeFile, copyFile} = require('./utils/generate-file.js');
 const generatePage = require('./src/page-template.js');
 
 
