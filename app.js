@@ -1,5 +1,4 @@
-const {writeFile, copyFile} = require('./utils/generate-file.js');
-const generatePage = require('./src/page-template.js');
+
 
 
 const inquirer = require('inquirer')
@@ -134,6 +133,7 @@ const promptProject = portfolioData => {
   });
 };
 
+
 promptUser()
 .then(promptProject)
 .then(portfolioData => {
@@ -154,27 +154,6 @@ promptUser()
 })
 
 
-// promptUser()
-//   .then(promptProject)
-//   .then(portfolioData => {
-//     console.log(portfolioData);
-//     const pageHTML = generatePage(portfolioData);
-    // fs.writeFile('./dist/index.html', pageHTML, err => {
-    //   if (err) {
-    //     console.log(err);
-    //     return;
-    //   }
-    //   console.log('Page created! Check out index.html in this directory to see it!');
-    
-    //   fs.copyFile('./src/style.css', './dist/style.css', err => {
-    //     if (err) {
-    //       console.log(err);
-    //       return;
-    //     }
-    //     console.log('Style sheet copied successfully!');
-    //   });
-    // });
-  // })
 
 
 
@@ -183,22 +162,6 @@ promptUser()
 
 
 
-
-
-
-
-
-
-
-// const printProfileData = profileDataArr => {
-//     for (let i = 0; i < profileDataArr.length; i += 1){
-//         console.log(profileDataArr[i]);
-//     }
-//     console.log("===========");
-// };
-// profileDataArgs.forEach((profileItem) => {
-//     console.log(profileItem);
-// })
 
 
 
